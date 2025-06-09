@@ -1,3 +1,5 @@
 venv/
 mon-env/
 node_modules/
+/static
+db.sqlite3
