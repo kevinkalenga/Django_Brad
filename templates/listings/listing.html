@@ -5,7 +5,16 @@
 {% block title %} | {{ listing.title }} {% endblock %} 
 
 {% block content %}
-
+  
+{% if messages %}
+  <div class="container mt-3">
+    {% for message in messages %}
+      <div class="alert alert-{{ message.tags }}">
+        {{ message }}
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
 
  <section id="showcase-inner" class="py-5 text-white">
     <div class="container">

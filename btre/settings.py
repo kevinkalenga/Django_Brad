@@ -147,3 +147,11 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
    
 }
+
+# Email config(nouveau mdp django)
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'kevinkalenga10@gmail.com'
+EMAIL_HOST_PASSWORD = 'hdyz nhxw zoio vlca'  # Replace with App Password if using Gmail!
+EMAIL_USE_TLS = True
